@@ -1,39 +1,155 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mr Khan</title>
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 text-gray-800">
-    <div class="min-h-screen flex items-center justify-center">
-      <div
-        class="max-w-xl mx-auto p-6 bg-white shadow-md rounded-lg text-center"
+  <body class="bg-gray-900 text-white font-sans">
+    <div class="max-w-7xl mx-auto px-4">
+      <nav
+        class="flex justify-between items-center py-6 border-b border-gray-700"
       >
-        <img
-          src="https://i.pinimg.com/736x/15/ca/1f/15ca1f069f180952180d1ed6fa79e098.jpg"
-          alt="Khangal"
-          class="w-32 h-32 rounded-full mx-auto mb-4"
-        />
-        <h1 class="text-3xl font-bold mb-2">Khangal Bayarsaikhan</h1>
-        <p class="text-lg text-gray-600 mb-4">
-          “The Fool that doesn’t belong to this era"
-        </p>
-        <div class="flex justify-center space-x-4">
-          <a href="Classified by the Fool" class="text-blue-600 hover:underline"
-            >GitHub</a
-          >
-          <a href="Classified by the Fool" class="text-blue-600 hover:underline"
-            >LinkedIn</a
-          >
-          <a
-            href="mailto:Classified by the Fool"
-            class="text-blue-600 hover:underline"
-            >Email</a
-          >
+        <div class="flex items-center gap-1 text-2xl font-bold text-white">
+          <p>Mr.Khan</p>
+          <span class="text-blue-500">.</span>
         </div>
-      </div>
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+        <div class="md:hidden">
+          <i
+            class="uil uil-bars text-2xl cursor-pointer"
+            onclick="myMenuFunction()"
+          ></i>
+        </div>
+      </nav>
+      <section
+        id="home"
+        class="flex flex-col md:flex-row items-center justify-between py-20"
+      >
+        <div class="md:w-1/2 space-y-6">
+          <h1 class="text-4xl md:text-5xl font-bold">
+            I'm Everything you know
+            <span class="typedText text-blue-400"></span>
+          </h1>
+          <p class="text-gray-300">
+            As of right now, I have 2 years of work experience and 790 in SAT.
+          </p>
+          <div class="flex gap-4">
+            <button
+              class="bg-blue-500 text-white px-5 py-2 rounded hover:bg-blue-600"
+            >
+              Hire Me
+            </button>
+            <button
+              class="bg-gray-700 text-white px-5 py-2 rounded hover:bg-gray-600 flex items-center gap-2"
+            >
+              Download CV <i class="uil uil-file-alt"></i>
+            </button>
+          </div>
+          <div class="flex gap-4 text-2xl text-blue-400">
+            <i class="uil uil-instagram cursor-pointer"></i>
+            <i class="uil uil-github-alt cursor-pointer"></i>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+          <img
+            src="LOTM.jpg"
+            alt="avatar"
+            class="rounded-lg w-64 h-64 object-cover"
+          />
+        </div>
+      </section>
+      <section id="about" class="py-16">
+        <div class="text-center mb-12">
+          <h1 class="text-3xl font-bold">About Me</h1>
+        </div>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <h3 class="text-xl font-semibold mb-4">My introduction</h3>
+            <p class="text-gray-300">
+              My name is Mister Khan Gal. I'm turning 18 soon. I study the
+              unknown things not explained by society. I'm optimistic,
+              intelligent, faithful, and persistent. I'm well-versed in HTML,
+              CSS, and JavaScript. Also studied Law and Medical.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-xl font-semibold mb-4">Perception</h3>
+            <div class="flex gap-4 flex-wrap text-blue-400">
+              <span class="bg-gray-800 px-3 py-1 rounded">HTML</span>
+              <span class="bg-gray-800 px-3 py-1 rounded">CSS</span>
+              <span class="bg-gray-800 px-3 py-1 rounded">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-16">
+        <div class="text-center mb-12">
+          <h1 class="text-3xl font-bold">Get in touch</h1>
+          <p class="text-gray-400">
+            Do you have a project in your mind? Contact me here.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-1/2 flex justify-center">
+            <img
+              src="LOTMB.jpg"
+              alt="avatar"
+              class="w-64 h-64 object-cover rounded-lg"
+            />
+          </div>
+          <div class="md:w-1/2 space-y-6">
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-1/2 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-1/2 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none"
+              />
+            </div>
+            <textarea
+              placeholder="Message"
+              class="w-full h-32 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none"
+            ></textarea>
+            <button
+              class="bg-blue-500 px-5 py-2 rounded text-white flex items-center gap-2 hover:bg-blue-600"
+            >
+              Send <i class="uil uil-message"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer class="border-t border-gray-700 mt-16 pt-10">
+        <div class="text-center text-xl font-semibold">Mr.Khan</div>
+        <ul class="flex justify-center gap-6 mt-4 text-gray-400">
+          <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+        <div class="flex justify-center gap-6 mt-6 text-blue-400 text-2xl">
+          <i class="uil uil-instagram cursor-pointer"></i>
+          <i class="uil uil-github-alt cursor-pointer"></i>
+          <i class="uil uil-message cursor-pointer"></i>
+        </div>
+      </footer>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./a.js"></script>
   </body>
-</html>
+  </html>
